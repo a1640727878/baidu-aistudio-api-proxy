@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "百度AI Studio API代理",
+  "version": "1.0.0",
+  "description": "专为百度AI Studio API服务优化的代理扩展",
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": [
+    "tabs",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "ws://aistudio.baidu.com/*",
+    "https://aistudio.baidu.com/*",
+    "http://aistudio.baidu.com/*"
+  ]
+}
